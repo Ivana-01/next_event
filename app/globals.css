@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 174, 86, 102;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -30,4 +30,37 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.glassmorphism {
+  @apply rounded-xl border border-zinc-200 bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+}
+
+.dropdown{
+  @apply absolute right-0 mt-2 mr-2 rounded-lg p-4 transition-all ease-in-out border border-zinc-600 bg-neutral-800/30 block w-1/6
+}
+
+.dropdown_link {
+  @apply text-zinc-300 hover:text-textLogo hover:transition-all font-medium w-full;
+}
+
+.btn{
+ @apply mt-2 rounded w-1/3 max-w-28
+ h-2/3 bg-zinc-800 hover:bg-zinc-950 hover:text-zinc-600 hover:transition-all
+}
+
+.btn2{
+  @apply rounded max-w-28 mt-2 p-3 w-full bg-zinc-800 hover:bg-zinc-950 hover:text-zinc-600 hover:transition-all
+ }
+
+.eventP{
+  @apply text-gray-500 text-sm my-1
+}
+
+.createLabel{
+  @apply font-semibold text-base text-zinc-950 p-2
+}
+
+.createInput{
+  @apply w-2/3 h-2/3 rounded border border bg-transparent p-2
 }
